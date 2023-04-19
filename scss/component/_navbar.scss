@@ -1,0 +1,24 @@
+/*barranavegacion*/
+.navbar-brand img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.container-fluid {
+  
+    background-color: aquamarine;
+    object-fit: cover;
+    background-image: url(../multimedia/imagesagua.jpg);
+    background-size: 50%;
+    font-size: 20px;
+  
+
+}.nav-item {
+    padding: 5px;
+    background-color: rgba(225, 127, 23, 0.748);
+    margin: 5px;
+    border-radius: 10%;
+    color: black;
+}

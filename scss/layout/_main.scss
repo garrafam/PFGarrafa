@@ -1,0 +1,60 @@
+/*empiezala pagina*/
+
+.principio {
+    background-color: #b8ac55;
+    .titulo1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.gral{
+    
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    grid-template-areas:  
+     "area1 area1 area1 area1 area2 area2"
+     "area3 area3 area4 area4 area2 area2";
+    .cajas h2{
+        margin-top: 25px;
+    }
+    .cajas img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+     }
+    .c1 {
+        grid-area: area1;
+        .img{
+            height: auto;
+            object-fit: cover;
+        }
+     }    
+    .c2 {
+        grid-area: area2;
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        height: 100%;
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .c3 {
+        grid-area: area3;
+    }    
+    .c4 {
+        grid-area: area4;
+    }
+  }
+ /*videos recomendados*/
+ .videos{
+    display: flex;
+    justify-content: center;
+    gap: 5PX;
+}

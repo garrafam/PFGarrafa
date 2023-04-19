@@ -1,0 +1,19 @@
+ /*footer*/
+ .footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+   
+
+}
+.footer__parrafo{
+    display: flex;
+    font-size: 30px;
+    margin-top: 55px;
+    justify-content: end;
+}
+.footer__img {
+    display: flex;
+    width:200px;
+    height: 100px;
+}
