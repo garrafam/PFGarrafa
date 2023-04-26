@@ -3,30 +3,34 @@
     display: grid;
    padding: 7px;
    grid-template-columns: 1fr 1fr;
-   background-color: black;
+   background-color: $firstcolor;
+                    .formularios--label{
+                    margin: 10px;
+                    padding: 7px;
+                    background-color: $sixthcolor;
+                    border-radius: 10px;
+                    border: $firstcolor;
+                    display: flex;
+                    width: 250px;
+                                 }
+                    .formulario__1 {
+                        @include flex (column,center , center);   
+                    }  
+                    .formularios__text{
+                        @include flex (column, center, center);       
+                    }
+                    .text{    
+                        @include wihe (250px, 60px);
+                        resize: none;
+                    }
+                    .input {
+                        margin: 10px;
+                    }
+                     .input:hover{
+                        background-color:$fourthcolor ;
+                    
+                    }
  }
-.input:hover{
-    background-color: #b8ac55;
-
-}
-h1:hover{
-color:red;
-background-color: aquamarine;
-}
-
- .formularios--label{
-    margin: 10px;
-    padding: 7px;
-    background-color: #ace1d0;
-    border-radius: 10px;
-    border: black solid;
- }
- .text{
-    width: 250px;
-    height: 60px;
-    resize: none;
- }
- .formularios__text{
-    display: flex;
-    align-items: center;
- }
+  
+ 
+ 

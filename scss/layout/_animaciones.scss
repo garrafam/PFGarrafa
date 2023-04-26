@@ -1,0 +1,12 @@
+.c{ 
+    animation: mover 5s linear infinite;
+    position: relative;
+ }
+@keyframes mover{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}

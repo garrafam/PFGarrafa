@@ -1,278 +1,328 @@
 /*mobile*/
 @media only screen and (max-width:400px) {
     /*paginaindex*/
- 
-         .gral1
-     {
-         display: none;
-         background-color: red;
-         
-     }
-          .gral{
-             display: flex;
-             flex-direction: column ;
-             object-fit: cover;
-          }
-         .principio{
+
+    .gral1 {
+        display: none;
+        background-color: $fifthcolor;
+    }
+
+    .principio {
+        @include wihe (100%, 100%);
+    }
+
+    .gral {
+        object-fit: cover;
+        @include flex(column, center, center);
+        .cajas img {
+            @include wihe (100%, 100%);
+            object-fit: cover;
+        }
+    }
+
+    .formularios {
+
+        @include flex(column, start, start);
+        .formulario__1{
+            @include flex(column, start, start)
+
+        }
+    }
+
+    .videos {
+
+        @include flex(column, center, center);
+        @include wihe (100%, 100%);
+    }
+
+    //FOOTER
+   .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+   }
+
+    /*paginaproductos*/
+    .productos {
+        @include flex(column, center, normal);
+        padding: 10px;
+        .productos__imagenes {
+            @include flex(row, center, center);            
+            @include wihe (100%, 100%);
+            object-fit: cover;
+        }
+
+    }
+
+    
+
+    /*paginaprodgenerales*/
+    .plasticos {
+        @include flex(column, center, normal);
+        padding: 5px;
+        .plasticos__imagen {
+            @include flex(column, center, center);
+            @include wihe (100%, 100%);
+            object-fit: cover;
+          
+        }
+    }
+
+    
+
+    //PAGINA AROMATIZACION
+    .aromatizacion {
+        @include flex(column, center,normal);
+        padding: 10px;
+
+        .aromatizacion__imagenes {
+            @include wihe (100%, 100%);
+           // padding: 10px;
+           object-fit: cover;
+        }
+
+
+    }
+
+
+}
+
+@media only screen and (min-width:401px) and (max-width:600px) {
+    /*paginaindex*/
+
+    .gral1 {
+        display: none;
+        background-color: $fifthcolor ;
+    }
+
+    .gral {       
+        @include flex(column, normal, normal);
+        object-fit: cover;
+    }
+
+    .principio {
+        @include wihe (100%, 100%); 
+    }
+
+    .cajas img {
+        @include wihe (100%, 100%);
+        object-fit: cover;
+    }
+
+    .formularios {      
+       @include flex(column, center, center);
+        .formulario__1{
+           @include flex(column, start, start);            
+            }
+        .formularios__text{
+            @include flex(column, start, start);   
+        }      
+        }
+    
+
+    .videos {        
+        @include flex(column, normal, center);
+    }
+
+    
+    /*paginaproductos*/
+    .productos{
+        padding: 5px;
+        .productos__imagenes {           
+            @include flex(column, center, center);
+            @include wihe (100%, 100%);
+            object-fit: cover;
+        }
+    }
+    //PAGINAAROMATIZACION
+    .aromatizacion{
+        padding: 5px;
+        .aromatizacion__imagenes{                      
+            @include flex(column, center, center);
+            @include wihe (100%, 100%);
+            object-fit: cover;
             
-             width: 100%;
+     }
+
+    }
+
+    /*pagina*/
+    .plasticos {
+        @include flex(column, normal, normal);
+        .plasticos__imagen {       
+            @include flex(column, center, center);
+            @include wihe (100%, 300px);
+            object-fit: cover;
+        }
+    }
+    
+
+
+     }
+
+
+
+
+@media only screen and (min-width:601px) and (max-width:920px) {
+    .gral1 {
+        display: none;
+    }
+
+    .gral {
+        @include wihe (100%, 100%);      
+        .cajas img {
+            object-fit: cover;
+        }
+    }    
+    .principio {
+        @include wihe (100%, 100%);
+    }   
+
+    .videos {        
+        @include flex(row, space-around, normal);
+              
+    }
+    .formularios {      
+        display: grid;
+                .formulario__1{
+            @include flex(column, start, start);            
+             }
+         .formularios__text{
+             @include flex(column, start, start);   
+         }      
          }
-         .cajas img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-         }
-         .formularios{
-             display: flex;
-             flex-direction: column;
-         }
-         .videos{
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-             width: 85%;
-         }
-         .footer{
-             display: flex;
-             flex-direction: column;
-             align-items: start;   
-         }
+
+    //FOOTER
         
-         .footer__imagen {       
-             width: 150px;
-          }
-          .footer__imagen__i {           
-             width: 150px;
-          }
-          /*paginaproductos*/
-          .productos{
-             display: flex;
-             flex-direction: column;
-            
-          }
-          .productos__imagenes{
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             width: 100%;
-          }
-          /*paginaprodgenerales*/
-          .plasticos{
-             display: flex;
-             flex-direction: column;
-          }
-          .plasticos__imagen{ 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          }
-     }
-  @media only screen and (min-width:401px) and (max-width:600px){
-   /*paginaindex*/
    
-     .gral1
-     {
-         display: none;
-         background-color: red;
-         
-     }
-          .gral{
-             display: flex;
-             flex-direction: column ;
-             object-fit: cover;
-          }
-         .principio{
-             width: 100%;
+ 
+    /*paginaproductos*/
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5px;
+        .productos__imagenes {
+            object-fit: cover;       
+           @include wihe (100%, 200px);       
+            border-radius: 10px;
+        //    @include flex(column, center, center)
+    
+        }
+    }
+
+ 
+
+    /*paginaprodgrales*/
+    .plasticos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0px 15px;
+        gap: 5px;
+        .plasticos__imagen {       
+            @include wihe (100%, 250px);     
+            border-radius: 10px;
+            @include flex(row ,center, center);
+            object-fit: cover;
+    
+        }
+    }
+
+   
+    //PAGINAAROMATIZACION
+    .aromatizacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0px 15px;
+        gap: 5px;
+        .aromatizacion__imagenes {        
+            @include wihe (100%, 300px);       
+            border-radius: 10px;
+            @include flex(row ,center, center);
+            object-fit: cover;
          }
-         .cajas img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
+    }
+
+ }
+
+
+@media only screen and (min-width:921px) {
+    .c3 h2 {
+        font-size: 39px;
+        justify-content: center;
+    }
+
+    .c4 h2 {
+        font-size: 37px;
+        justify-content: center;
+    }
+    .formularios{
+
+        .formulario__1{
+        @include flex(column, start, start);            
          }
-         .formularios{
-             display: flex;
-             flex-direction: column;
-         }
-         .videos{
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
-         .footer{
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-          }
-          /*paginaproductos*/
-         .productos__imagenes{
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             width: 100%;
-          }
-           /*pagina*/
-           .plasticos{
-             display: flex;
-             flex-direction: column;
-          }
-          .plasticos__imagen{ 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          }
-      }
+         .formularios__text{
+         @include flex(column, start, start);   
+     } 
+    }   
+
+    .videos {      
+        @include flex(row,space-around , center);
+        
+    }
+
     
  
- 
-  @media only screen and (min-width:601px) and (max-width:920px){
-     .gral1{
-         display: none;
-     }
-     .gral{
-         width: 100%;        
-     }
-     .cajas img{     
-         object-fit: cover;
-     }
-     .principio{
-         width: 100%;
-      }
-      .c3 h2{
-         font-size: 32px;
-       }
-      .c4{
-         font-size: 15px;
-      }
-      .videos{
-         display: flex;
-         justify-content: space-around ;
-     }
-     .footer{
-         display: flex;
-         
-         justify-content: center;
-         align-items: start;
-      }
-      .footer h5{
-         font-size: 16px;
-      }
-      .footer__imagen {
-         width: 225px;
-         height: 120px;
-         margin-top: 19px;
-      }
-      .footer__imagen__i {
-         width: 225px;
-         height: 120px;
-         margin-top: -6px;
-      }
-       /*paginaproductos*/
-      .productos{
-         display : grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-      }
-      .productos__imagenes{
-         display: flex;
-         width: 80%;
-         height: 200px;
-         align-items: center;
-         justify-content: center;
-         border-radius: 10px;
- 
-      }
-     /*paginaprodgrales*/
-     .plasticos{
-         display : grid;
+
+    /*paginaproductos*/
+    .productos {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-      }
-     .plasticos__imagen{
-         display: flex;
-         width: 80%;
-         height: 250px;
-         align-items: center;
-         justify-content: center;
-         border-radius: 10px;
- 
-      }
- 
-       }
-  @media only screen and (min-width:921px){
-      .c3 h2{
-         font-size: 25px;
-         justify-content: center;
-       }
-       .c4 h2{
-         font-size: 25px;
-         justify-content: center;
+        gap: 5px;
+        .productos__imagenes {           
+            @include wihe (100%, 250px);            
+            border-radius: 10px;
+            @include flex(row ,center, center);
+            object-fit: cover;
         }
-      .videos {
-       display: flex;
-       justify-content: space-around;
-      
-      }
-      .footer__imagen {
-        
-         margin-top: 63px;
-      }
-      .footer__imagen__i {
-         
-        
-         margin-top: -6px;
-      }
-      .footer__parrafo{
-         font-size: 35px;
-         margin-top: 109px;
-      } 
-      /*paginaproductos*/
-      .productos{
-         display : grid;
+    }   
+
+    /*paginaprodgrales*/  
+    .plasticos    {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-      }
-      .productos__imagenes{
-         display: flex;
-         width: 80%;
-         height: 250px;
-         align-items: center;
-         justify-content: center;
-         border-radius: 10px;
-      }
-       /*paginaprodgrales*/
-     .plasticos /*.aromatizacion*/{
-         display : grid;
+        gap: 5px;
+        .plasticos__imagen {     
+            @include wihe (100%, 300px);       
+            border-radius: 10px;
+            @include flex(row ,center, center);
+            object-fit: cover;
+        }
+    }
+
+    
+
+    /*pagaromatizacion*/
+    .aromatizacion {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-      }
-     .plasticos__imagen{
-         display: flex;
-         width: 80%;
-         height: 300px;
-         align-items: center;
-         justify-content: center;
-         border-radius: 10px;
-      }
-      /*pagaromatizacion*/
-     .aromatizacion{
-         display : grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin: 0px 15px;
-      }
- 
-       .aromatizacion__imagenes{
-         display: flex;
-         width: 80%;
-         height: 300px;
-         align-items: center;
-         justify-content: center;
-         border-radius: 10px;
-      }
-  }
+        gap: 5px;
+        .aromatizacion__imagenes {        
+            @include wihe (100%, 300px);     
+            border-radius: 10px;
+            @include flex(row ,center, center);
+            object-fit: cover;
+             }
+    }
+
+    
+ }

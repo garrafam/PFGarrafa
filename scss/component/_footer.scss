@@ -1,19 +1,72 @@
  /*footer*/
- .footer{
+ 
+.contenedor {
     display: flex;
-    justify-content: space-around;
-    align-items: start;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(163, 188, 210);
+    margin: 5px;
+    height: 200px;
+    align-items: center;
+     
+    .contenedor__titulo{
+        display: flex;
+        width: 150px;
+        flex-direction: column;
+        
+    }
+    .contenedor__titulo h3{
+
+        font-family: 'Italianno', cursive;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .contenedor__titulo p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+    
+    }
+    .contenedor__imagen{  
+        display: flex;
+        object-fit: cover;
+        height: 100%;
+       
+    }
+    .contenedor__imagen img{
+        width: 250px;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .contenedor__mapa{   
+        display: flex;
+        object-fit: cover;
+        flex-direction: column;    
+       
+    }
+    .contenedor__mapa iframe{
+        width: 200px;
+        height: 100%;  
+        border-radius: 100%; 
+     }
+    
+    
+    
+    .contenedor__redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height:  100%;
+     }
+ }
+
+
+
    
 
-}
-.footer__parrafo{
-    display: flex;
-    font-size: 30px;
-    margin-top: 55px;
-    justify-content: end;
-}
-.footer__img {
-    display: flex;
-    width:200px;
-    height: 100px;
-}
+
+
+
+
+
+

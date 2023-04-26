@@ -1,15 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+//BASE
 @import "base/_reset.scss";
 @import "base/_vars.scss";
-
+@import "base/utilities";
+//COMPONENT
 @import "component/_navbar.scss";
 @import "component/_footer.scss";
 @import "component/_marcas.scss";
 @import "component/_contactos";
+//LAYOUT
 @import "layout/main";
 @import "layout/acercade";
-@import "layout/mediaqueries"
+@import "layout/mediaqueries";
+@import "layout/animaciones";
 
  
 

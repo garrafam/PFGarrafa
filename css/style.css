@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /*barranavegacion*/
@@ -13,7 +14,7 @@
 }
 
 .container-fluid {
-  background-color: aquamarine;
+  background-color: #ace1d0;
   object-fit: cover;
   background-image: url(../multimedia/imagesagua.jpg);
   background-size: 50%;
@@ -22,79 +23,76 @@
 
 .nav-item {
   padding: 5px;
-  background-color: rgba(225, 127, 23, 0.748);
+  background-color: rgba(187, 74, 239, 0.9254901961);
   margin: 5px;
-  border-radius: 10%;
-  color: black;
+  border-radius: 10px;
+  color: #191919;
 }
 
 /*footer*/
-.footer {
+.contenedor {
   display: flex;
-  justify-content: space-around;
-  align-items: start;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(163, 188, 210);
+  margin: 5px;
+  height: 200px;
+  align-items: center;
 }
-
-.footer__parrafo {
+.contenedor .contenedor__titulo {
   display: flex;
-  font-size: 30px;
-  margin-top: 55px;
-  justify-content: end;
+  width: 150px;
+  flex-direction: column;
 }
-
-.footer__img {
+.contenedor .contenedor__titulo h3 {
+  font-family: "Italianno", cursive;
+  font-size: 40px;
+  font-weight: 900;
+}
+.contenedor .contenedor__titulo p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+.contenedor .contenedor__imagen {
   display: flex;
+  object-fit: cover;
+  height: 100%;
+}
+.contenedor .contenedor__imagen img {
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+}
+.contenedor .contenedor__mapa {
+  display: flex;
+  object-fit: cover;
+  flex-direction: column;
+}
+.contenedor .contenedor__mapa iframe {
   width: 200px;
-  height: 100px;
+  height: 100%;
+  border-radius: 100%;
+}
+.contenedor .contenedor__redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .gral1 {
-  /* margin-top: 90px;*/
-  display: grid;
   gap: 15px;
-  background-color: white;
+  background-color: #191919;
   padding: 15px;
-  grid-template-areas: "area5 area6 area7 area8 area9 area10 area11";
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .gral1 img {
   width: 100px;
-}
-
-.c5 {
-  grid-area: area5;
-  width: 14%;
-  background-color: rgba(225, 236, 236, 0.8) E;
-}
-
-.c6 {
-  grid-area: area6;
-  width: 14%;
-}
-
-.c7 {
-  grid-area: area7;
-  width: 14%;
-}
-
-.c8 {
-  grid-area: area8;
-  width: 14%;
-}
-
-.c9 {
-  grid-area: area9;
-  width: 14%;
-}
-
-.c10 {
-  grid-area: area10;
-  width: 14%;
-}
-
-.c11 {
-  grid-area: area11;
-  width: 14;
+  height: 80px;
 }
 
 /*contactanos*/
@@ -102,35 +100,39 @@
   display: grid;
   padding: 7px;
   grid-template-columns: 1fr 1fr;
-  background-color: black;
+  background-color: #191919;
 }
-
-.input:hover {
-  background-color: #b8ac55;
-}
-
-h1:hover {
-  color: red;
-  background-color: aquamarine;
-}
-
-.formularios--label {
+.formularios .formularios--label {
   margin: 10px;
   padding: 7px;
   background-color: #ace1d0;
   border-radius: 10px;
-  border: black solid;
+  border: #191919;
+  display: flex;
+  width: 250px;
 }
-
-.text {
+.formularios .formulario__1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formularios .formularios__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formularios .text {
   width: 250px;
   height: 60px;
   resize: none;
 }
-
-.formularios__text {
-  display: flex;
-  align-items: center;
+.formularios .input {
+  margin: 10px;
+}
+.formularios .input:hover {
+  background-color: #b8ac55;
 }
 
 /*empiezala pagina*/
@@ -139,13 +141,19 @@ h1:hover {
 }
 .principio .titulo1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+.principio h1:hover {
+  color: #ff0000;
+  background-color: aquamarine;
 }
 
 .gral {
   display: grid;
   gap: 15px;
-  padding: 15px;
+  padding: 5px;
   grid-template-areas: "area1 area1 area1 area1 area2 area2" "area3 area3 area4 area4 area2 area2";
 }
 .gral .cajas h2 {
@@ -168,10 +176,12 @@ h1:hover {
   grid-area: area2;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
   height: 100%;
 }
-.gral .c2 .img {
+.gral .c2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -186,21 +196,28 @@ h1:hover {
 /*videos recomendados*/
 .videos {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 5PX;
 }
 
 /*pagacercade*/
 .carrusel {
+  margin-top: 20px;
   width: 100%;
   height: 300px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .carousel {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .d-block {
@@ -213,17 +230,20 @@ h1:hover {
   /*paginaindex*/
   .gral1 {
     display: none;
-    background-color: red;
-  }
-  .gral {
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
+    background-color: #ff0000;
   }
   .principio {
     width: 100%;
+    height: 100%;
   }
-  .cajas img {
+  .gral {
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gral .cajas img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -231,60 +251,92 @@ h1:hover {
   .formularios {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .formularios .formulario__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
   .videos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
+    height: 100%;
   }
-  .footer {
+  .contenedor {
     display: flex;
     flex-direction: column;
-    align-items: start;
-  }
-  .footer__imagen {
-    width: 150px;
-  }
-  .footer__imagen__i {
-    width: 150px;
+    justify-content: center;
+    align-items: center;
   }
   /*paginaproductos*/
   .productos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    padding: 10px;
   }
-  .productos__imagenes {
+  .productos .productos__imagenes {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   /*paginaprodgenerales*/
   .plasticos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    padding: 5px;
   }
-  .plasticos__imagen {
+  .plasticos .plasticos__imagen {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .aromatizacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    padding: 10px;
+  }
+  .aromatizacion .aromatizacion__imagenes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 600px) {
   /*paginaindex*/
   .gral1 {
     display: none;
-    background-color: red;
+    background-color: #ff0000;
   }
   .gral {
     display: flex;
     flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
     object-fit: cover;
   }
   .principio {
     width: 100%;
+    height: 100%;
   }
   .cajas img {
     width: 100%;
@@ -294,35 +346,80 @@ h1:hover {
   .formularios {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .formularios .formulario__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .formularios .formularios__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
   .videos {
     display: flex;
     flex-direction: column;
+    justify-content: normal;
     align-items: center;
   }
-  .footer {
+  /*paginaproductos*/
+  .productos {
+    padding: 5px;
+  }
+  .productos .productos__imagenes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  /*paginaproductos*/
-  .productos__imagenes {
+  .aromatizacion {
+    padding: 5px;
+  }
+  .aromatizacion .aromatizacion__imagenes {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   /*pagina*/
   .plasticos {
     display: flex;
     flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
   }
-  .plasticos__imagen {
+  .plasticos .plasticos__imagen {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenedor__titulo {
+    width: 150px;
+  }
+  .contenedor__imagen img {
+    width: 150px;
+  }
+  .contenedor__mapa iframe {
+    width: 150px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 920px) {
@@ -331,53 +428,47 @@ h1:hover {
   }
   .gral {
     width: 100%;
+    height: 100%;
   }
-  .cajas img {
+  .gral .cajas img {
     object-fit: cover;
   }
   .principio {
     width: 100%;
-  }
-  .c3 h2 {
-    font-size: 32px;
-  }
-  .c4 {
-    font-size: 15px;
+    height: 100%;
   }
   .videos {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: normal;
   }
-  .footer {
+  .formularios {
+    display: grid;
+  }
+  .formularios .formulario__1 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: start;
   }
-  .footer h5 {
-    font-size: 16px;
-  }
-  .footer__imagen {
-    width: 225px;
-    height: 120px;
-    margin-top: 19px;
-  }
-  .footer__imagen__i {
-    width: 225px;
-    height: 120px;
-    margin-top: -6px;
+  .formularios .formularios__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
   /*paginaproductos*/
   .productos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
   }
-  .productos__imagenes {
-    display: flex;
-    width: 80%;
+  .productos .productos__imagenes {
+    object-fit: cover;
+    width: 100%;
     height: 200px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
   }
   /*paginaprodgrales*/
@@ -386,38 +477,62 @@ h1:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
+    gap: 5px;
   }
-  .plasticos__imagen {
-    display: flex;
-    width: 80%;
+  .plasticos .plasticos__imagen {
+    width: 100%;
     height: 250px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+  .aromatizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0px 15px;
+    gap: 5px;
+  }
+  .aromatizacion .aromatizacion__imagenes {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
   }
 }
 @media only screen and (min-width: 921px) {
   .c3 h2 {
-    font-size: 25px;
+    font-size: 39px;
     justify-content: center;
   }
   .c4 h2 {
-    font-size: 25px;
+    font-size: 37px;
     justify-content: center;
+  }
+  .formularios .formulario__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .formularios .formularios__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
   .videos {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-  }
-  .footer__imagen {
-    margin-top: 63px;
-  }
-  .footer__imagen__i {
-    margin-top: -6px;
-  }
-  .footer__parrafo {
-    font-size: 35px;
-    margin-top: 109px;
+    align-items: center;
   }
   /*paginaproductos*/
   .productos {
@@ -425,14 +540,17 @@ h1:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
+    gap: 5px;
   }
-  .productos__imagenes {
-    display: flex;
-    width: 80%;
+  .productos .productos__imagenes {
+    width: 100%;
     height: 250px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
   }
   /*paginaprodgrales*/
   .plasticos {
@@ -440,14 +558,17 @@ h1:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
+    gap: 5px;
   }
-  .plasticos__imagen {
-    display: flex;
-    width: 80%;
+  .plasticos .plasticos__imagen {
+    width: 100%;
     height: 300px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
   }
   /*pagaromatizacion*/
   .aromatizacion {
@@ -455,14 +576,30 @@ h1:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
+    gap: 5px;
   }
-  .aromatizacion__imagenes {
-    display: flex;
-    width: 80%;
+  .aromatizacion .aromatizacion__imagenes {
+    width: 100%;
     height: 300px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+}
+.c {
+  animation: mover 5s linear infinite;
+  position: relative;
+}
+
+@keyframes mover {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
   }
 }
 
