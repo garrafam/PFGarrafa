@@ -4,8 +4,15 @@
     @include wihe (100%, 300px);   
     @include flex( row, center , center)
 }
+.carousel_titulo{
+    font-family: 'Italianno', cursive;
+    font-weight: 900;
+        font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
 .carousel{   
-    @include flex( row, center , center)
+    @include flex( row, center , center);
 }
  .d-block{
     @include wihe (300px, 300px);

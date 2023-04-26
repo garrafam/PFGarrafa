@@ -1,0 +1,7 @@
+.titulo1 { 
+    @include flex (row, center,center);
+    font-family: 'Italianno', cursive;
+   font-weight: 900;
+   font-size: 50px;
+   background-color:$thirdcolor ;
+    }
