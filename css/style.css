@@ -22,9 +22,10 @@
 }
 
 .nav-item {
+  width: 250px;
   padding: 5px;
   background-color: rgba(187, 74, 239, 0.9254901961);
-  margin: 5px;
+  margin: 10px;
   border-radius: 10px;
   color: #191919;
 }
