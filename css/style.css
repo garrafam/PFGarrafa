@@ -541,6 +541,9 @@
   }
 }
 @media only screen and (min-width: 921px) {
+  .nav-item {
+    width: auto;
+  }
   .c3 h2 {
     font-size: 39px;
     justify-content: center;
