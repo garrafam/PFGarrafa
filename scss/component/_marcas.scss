@@ -6,7 +6,8 @@
     @include flex (row, space-between , center);
 
     img {     
-        @include wihe (100px, 80px)
+        @include wihe (120px, 80px);
+        object-fit: cover;
     }
 
 

@@ -62,6 +62,7 @@
 }
 .contenedor .contenedor__imagen img {
   border-radius: 10px;
+  object-fit: cover;
 }
 .contenedor .contenedor__mapa {
   object-fit: cover;
@@ -94,8 +95,9 @@
   align-items: center;
 }
 .gral1 img {
-  width: 100px;
+  width: 120px;
   height: 80px;
+  object-fit: cover;
 }
 
 /*contactanos*/
