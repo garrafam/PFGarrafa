@@ -79,7 +79,7 @@
 
         .aromatizacion__imagenes {
             @include wihe (100%, 100%);
-           // padding: 10px;
+            padding: 10px;
            object-fit: cover;
         }
 
@@ -202,6 +202,7 @@
     }
     .formularios {      
         display: grid;
+        grid-template-columns: 1fr 1fr;
                 .formulario__1{
             @include flex(column, start, start);            
              }
@@ -342,7 +343,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-        gap: 5px;
+        gap: 15px;
         .aromatizacion__imagenes {        
             @include wihe (100%, 300px);     
             border-radius: 10px;

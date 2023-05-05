@@ -1,7 +1,7 @@
 /*empiezala pagina*/
 
 .principio {
-    background-color:$fourthcolor;
+    background-color:$fifthcolor;
     .titulo1 { 
      @include flex (row, center,center);
      font-family: 'Italianno', cursive;
@@ -9,8 +9,8 @@
     font-size: 50px;
      }
      h1:hover{
-        color:$fifthcolor;
-        background-color: aquamarine;
+        color:$firstcolor;
+        background-color:$fifthcolor ;
       }
     }
 
