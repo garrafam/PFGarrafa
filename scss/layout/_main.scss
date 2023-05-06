@@ -2,15 +2,21 @@
 
 .principio {
     background-color:$fifthcolor;
+    
     .titulo1 { 
      @include flex (row, center,center);
      font-family: 'Italianno', cursive;
     font-weight: 900;
     font-size: 50px;
+    
      }
+
      h1:hover{
         color:$firstcolor;
         background-color:$fifthcolor ;
+      }
+      .parrafo{
+        padding: 5px;
       }
     }
 

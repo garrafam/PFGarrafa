@@ -2,7 +2,7 @@
  
 .contenedor {  
     padding: 10px;
-    background-color: rgb(163, 188, 210);
+    background-color:$fourthcolor;
     margin: 5px;
     height: 200px;   
     @include flex (row, space-between, center);
@@ -48,12 +48,17 @@
     
     
     
-    .contenedor__redes{    
-       
+    .contenedor__redes{           
         height:  100%;
-        @include flex (column, space-around, start);
+        @include flex (column, space-around, start); 
+        .fa-brands{
+            color: black;
+            font-size: 15 px !important;
+         }      
         
      }
+     
+     
  }
 
 

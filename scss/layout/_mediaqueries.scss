@@ -136,7 +136,7 @@
         width: 150px;
     }
     .contenedor__imagen img{      
-        @include wihe (150px, 150px);
+        @include wihe (auto, 110px);
     }
     .contenedor__mapa iframe{
         width: 150px;
@@ -218,7 +218,7 @@
         @include wihe (100%, 100%);
     } 
     .contenedor__imagen img{        
-        @include wihe (250px, 150px);
+        @include wihe (auto, 180px);
        
  }
  
