@@ -28,7 +28,7 @@
 .nav-item {
   width: 250px;
   padding: 5px;
-  background-color: rgba(187, 74, 239, 0.9254901961);
+  background-color: rgba(246, 129, 229, 0.9254901961);
   margin: 10px;
   border-radius: 10px;
   color: #191919;
@@ -160,6 +160,7 @@
   font-family: "Italianno", cursive;
   font-weight: 900;
   font-size: 50px;
+  padding: 10px;
 }
 .principio h1:hover {
   color: #191919;
@@ -225,9 +226,9 @@
 .carrusel {
   margin-top: 20px;
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -238,17 +239,25 @@
   font-size: 60px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .carousel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 500px;
 }
 
 .d-block {
   width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  width: 500px;
   height: 300px;
 }
 
@@ -352,6 +361,21 @@
     width: 100%;
     height: 100%;
     padding: 10px;
+    object-fit: cover;
+  }
+  /*pagacercade*/
+  .d-block {
+    height: 190px;
+    padding: 5px;
+  }
+  .carousel-inner {
+    width: 270px;
+    height: 178px;
+    object-fit: cover;
+  }
+  .carousel {
+    width: 270px;
+    height: 200px;
     object-fit: cover;
   }
 }
@@ -458,6 +482,20 @@
     height: 300px;
     object-fit: cover;
   }
+  /*pagacercade*/
+  .d-block {
+    height: 270px;
+    padding: 5px;
+  }
+  .carousel-inner {
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+  }
+  .carousel {
+    width: 400px;
+    height: 264px;
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 920px) {
   .gral1 {
@@ -525,7 +563,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
-    gap: 5px;
+    gap: 15px;
   }
   .plasticos .plasticos__imagen {
     width: 100%;
@@ -553,6 +591,11 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
+  }
+  /*acercade*/
+  .d-block {
+    height: 296px;
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 921px) {
@@ -591,7 +634,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
-    gap: 5px;
+    gap: 15px;
   }
   .productos .productos__imagenes {
     width: 100%;
@@ -609,7 +652,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
-    gap: 5px;
+    gap: 15px;
   }
   .plasticos .plasticos__imagen {
     width: 100%;
@@ -639,6 +682,11 @@
     align-items: center;
     object-fit: cover;
   }
+  /*acercade*/
+  .d-block {
+    height: 296px;
+    padding: 5px;
+  }
 }
 .c {
   animation: mover 5s linear infinite;
@@ -661,8 +709,12 @@
   font-family: "Italianno", cursive;
   font-weight: 900;
   font-size: 50px;
-  background-color: rgba(187, 74, 239, 0.9254901961);
+  background-color: rgba(246, 129, 229, 0.9254901961);
   gap: 20px;
+}
+
+.productos {
+  gap: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

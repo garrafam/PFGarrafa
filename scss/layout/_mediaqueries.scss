@@ -62,6 +62,7 @@
     .plasticos {
         @include flex(column, center, normal);
         padding: 5px;
+     
         .plasticos__imagen {
             @include flex(column, center, center);
             @include wihe (100%, 100%);
@@ -85,9 +86,23 @@
 
 
     }
-
-
+   /*pagacercade*/
+    .d-block{
+        height: 190px;
+        padding: 5px;
+    }
+    .carousel-inner {
+        width: 270px;
+        height: 178px;    
+        object-fit: cover;
+ }
+ .carousel{
+ width: 270px;
+ height: 200px;
+ object-fit: cover;
+  }
 }
+
 
 @media only screen and (min-width:401px) and (max-width:600px) {
     /*paginaindex*/
@@ -173,11 +188,24 @@
             object-fit: cover;
         }
     }
-    
+    /*pagacercade*/
+    .d-block{
+        height: 270px;
+        padding: 5px;
+    }
+    .carousel-inner {
+        width: 400px;
+        height: 270px;
+        object-fit: cover;
+ }
+ .carousel {
 
+ 
+ width: 400px;
+ height: 264px;
 
      }
-
+ }
 
 
 
@@ -245,7 +273,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-        gap: 5px;
+        gap: 15px;
         .plasticos__imagen {       
             @include wihe (100%, 250px);     
             border-radius: 10px;
@@ -269,6 +297,13 @@
             @include flex(row ,center, center);
             object-fit: cover;
          }
+    }
+    /*acercade*/
+    .d-block{
+      
+            height: 296px;
+            padding: 5px;
+        
     }
 
  }
@@ -311,7 +346,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-        gap: 5px;
+        gap: 15px;
         .productos__imagenes {           
             @include wihe (100%, 250px);            
             border-radius: 10px;
@@ -326,7 +361,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin: 0px 15px;
-        gap: 5px;
+        gap: 15px;
         .plasticos__imagen {     
             @include wihe (100%, 300px);       
             border-radius: 10px;
@@ -350,6 +385,11 @@
             @include flex(row ,center, center);
             object-fit: cover;
              }
+    }
+    /*acercade*/
+    .d-block{
+        height: 296px;
+        padding: 5px;
     }
 
     

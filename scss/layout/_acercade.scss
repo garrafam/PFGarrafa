@@ -1,8 +1,8 @@
 /*pagacercade*/
 .carrusel{
     margin-top: 20px ;    
-    @include wihe (100%, 300px);   
-    @include flex( row, center , center)
+    @include wihe (100%, 400px);   
+    @include flex( column, center , center)
 }
 .carousel_titulo{
     font-family: 'Italianno', cursive;
@@ -10,11 +10,18 @@
         font-size: 60px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .carousel{   
-    @include flex( row, center , center);
+    @include flex( column, center , center);
+    width: 500px;
 }
  .d-block{
     @include wihe (300px, 300px);
+    object-fit: cover
  ;
+}
+.carousel-inner{
+    width: 500px;
+    height: 300px;
 }
