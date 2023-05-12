@@ -240,6 +240,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: rgba(246, 129, 229, 0.9254901961);
 }
 
 .carousel {
@@ -580,7 +581,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
-    gap: 5px;
+    gap: 15px;
+    padding: 15px;
   }
   .aromatizacion .aromatizacion__imagenes {
     width: 100%;
@@ -671,6 +673,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0px 15px;
     gap: 15px;
+    padding: 15px;
   }
   .aromatizacion .aromatizacion__imagenes {
     width: 100%;

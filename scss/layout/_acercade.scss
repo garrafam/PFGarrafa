@@ -7,10 +7,11 @@
 .carousel_titulo{
     font-family: 'Italianno', cursive;
     font-weight: 900;
-        font-size: 60px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color:$thirdcolor;
 }
 .carousel{   
     @include flex( column, center , center);
@@ -18,8 +19,7 @@
 }
  .d-block{
     @include wihe (300px, 300px);
-    object-fit: cover
- ;
+    object-fit: cover ;
 }
 .carousel-inner{
     width: 500px;
