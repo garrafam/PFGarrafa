@@ -2,7 +2,14 @@
 
 .principio {
     background-color:$fifthcolor;
-    
+    flex-direction: row;
+    .empezar
+        {flex-direction: row;
+
+    }
+    .carr{
+        border-radius: 5%;
+    }
     .titulo1 { 
      @include flex (row, center,center);
      font-family: 'Italianno', cursive;
@@ -73,4 +80,123 @@
  .videos{  
     @include flex (row, center,center);
     gap: 5PX;
+}
+/* loggin*/
+
+
+
+button {
+    padding: 12px;
+    background: rgb(0 179 199);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    align-self: center;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: -4px;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px
+}
+#enviar{
+    margin: 20px;
+}
+#app{
+    background-color: #727C94;
+    height: 100%;
+    display: flex;   
+    width: 100%;
+    gap: 15px;
+    justify-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+#header_button {
+    border: 1px solid rgb(19, 18, 18) !important;
+    background-color:rgb(37, 192, 240); 
+    color: black;
+    margin: 15px;
+}
+#button{border: 1px solid rgb(19, 18, 18) !important;
+    background-color:rgb(37, 192, 240); 
+    color: black;
+    
+}
+.tarjeta {
+    height:320px;
+    width: 150px;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    flex-direction: column;
+  
+    object-fit: cover;
+
+}
+.tarjeta_image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tarjeta_informacion {
+    padding: 12px;
+}
+#usuario  {
+    height: 30 px;
+    width: 150 px;
+    border-radius: 5px;
+    margin-top: 100px;
+
+}
+#contraseña
+{    height: 30 px;
+    width: 150 px;
+    border-radius: 5px;
+
+
+
+}
+#loggeo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#carr {
+    background-color: #b9c6e5;
+    border-radius: 10px;
+    border-radius: 10px;
+    height: 58px;    
+    margin-top: 11px;
+    width: 75px;
+
+}
+
+.dato{
+  
+font-size: 70%;
+}
+.bodyLoggin{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-items: center;
+    background-color: rgb(86, 158, 18);
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.tituloCarrito{
+    text-align: center;
+    font-family: cursive;
+    font-size: 250%;
+    padding: 20px;
 }
